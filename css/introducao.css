@@ -1,0 +1,79 @@
+.introducao{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: 100px;
+}
+
+.introducao img{
+    margin-top: 30px;
+    margin-left: 50px;
+    max-height: 500px;
+    max-width: 100%;
+    display: block;
+}
+.introducao h1{
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.introducao h1::before{
+    content: "";
+    display: block;
+    margin-top: 50px;
+    width: 1200px;
+    height: 600px;
+    background: url('../img/irra.png') no-repeat center;
+    position: absolute;
+    top: -350px;
+    left: -500px;
+    z-index: -1;
+
+}
+
+.introducao a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.3rem ;
+    font-family: 'Fire Sans', Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-top: 70px;
+}
+@media (max-width: 1000px){
+    .introducao h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px){
+    .introducao{
+        grid-template-columns: 4fr 8fr;
+        gap: 70px;
+    }
+    .introducao h1{
+        font-size: 2rem;
+    }
+    .introducao h1::before{
+        width: -10px;
+        height: -10px;
+    }
+}
+
+@media (max-width: 400px){
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+    .introducao img{
+        display: none;
+
+    }
+
+}
