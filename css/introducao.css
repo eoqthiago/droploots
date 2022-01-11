@@ -1,5 +1,5 @@
 .introducao{
-    max-width: 1200px;
+    max-width: 100%;
     padding: 40px 20px;
     margin: 0 auto;
     display: grid;
@@ -76,4 +76,16 @@
 
     }
 
+}
+
+@media (max-width: 1500px){
+    .introducao{
+        grid-template-columns: 1fr 1fr;
+    }
+    .introducao img{
+        display: none;
+    }
+    .introducao {
+        padding: 40px 40px;
+    }
 }
