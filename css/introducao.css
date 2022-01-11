@@ -51,10 +51,33 @@
     .introducao h1{
         font-size: 3rem;
     }
+    .introducao h1{
+        font-size: 2rem;
+    }
+    .introducao h1::before{
+        width: -10px;
+        height: -10px;
+    }
 }
 
 @media (max-width: 800px){
     .introducao{
+        padding: auto;
+        grid-template-columns: 4fr 8fr;
+        gap: 70px;
+    }
+    .introducao h1{
+        font-size: 2rem;
+    }
+    .introducao h1::before{
+        width: -10px;
+        height: -10px;
+    }
+}
+
+@media (max-width: 400px){
+    .introducao{
+        padding: 20px;
         grid-template-columns: 4fr 8fr;
         gap: 70px;
     }
