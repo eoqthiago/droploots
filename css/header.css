@@ -51,9 +51,15 @@ header{
 
 @media (max-width: 1500px){
     header{
-        padding: 3px 50px;
+        padding: 3px 10px;
         margin: 0 auto;
+        
+    }
+    .header-menu{
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
     }
 
 }
