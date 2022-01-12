@@ -32,3 +32,10 @@
     font-size: 1.25rem;
     color: #8f8f8f;
 }
+
+@media (max-width: 800px){
+    .footer-contato {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}

@@ -90,24 +90,5 @@
     }
 }
 
-@media (max-width: 1280px){
-    .introducao{
-        grid-template-columns: 4fr 8fr;
-        gap: 70px;
-    }
-    .introducao h1{
-        font-size: 2rem;
-    }
-    .introducao h1::before{
-        width: -10px;
-        height: -10px;
-    }
-    .introducao img{
-        margin-top: 60px;
-        margin-left: 100px;
-        max-height: 700px;
-        max-width: 100%;
-        display: block;
-    }
-}
+
 
