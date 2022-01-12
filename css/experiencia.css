@@ -68,7 +68,10 @@
     position: absolute;
 }
 
-@media (max-width: 800px){
+
+/*RESPONSIVO*/
+
+@media (max-width: 800px ){
     .empresa-titulo{
         display: none;
         
@@ -109,3 +112,47 @@
         display: none;
     }
 }
+
+
+@media (max-width: 1000px ){
+    .empresa-titulo{
+        display: none;
+        
+    }
+    .empresa-texto {
+        width: 100%;
+        left: 10%;
+        margin-top: -5%;
+        max-width: 29ch;
+        
+    }
+    .empresa {
+        width: 100%;
+    }
+    .experiencia-texto {
+        padding: auto;
+        grid-template-columns: 4fr 8fr;
+        gap: 70px;
+        width: 100%;
+        margin-left: 100%;
+        margin-right: 100%;
+        margin-bottom: none;
+    }
+    .subtitulo{
+        display: none;
+    }
+
+    .empresa {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20% 80% ;
+        background: #e1e1e1;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+    .empresa::before {
+        display: none;
+    }
+}
+
